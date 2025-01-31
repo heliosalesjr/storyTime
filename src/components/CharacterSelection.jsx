@@ -1,9 +1,7 @@
-
-
 import PropTypes from 'prop-types';
 
 const CharacterSelection = ({ onSelect }) => {
-  const animals = ['leão', 'girafa', 'elefante', 'macaco', 'tigre'];
+  const animals = ['lion', 'giraffe', 'elephant', 'monkey', 'tiger'];
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,23 +12,44 @@ const CharacterSelection = ({ onSelect }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Escolha um animal:
-        <select name="animal" required>
-          {animals.map((animal) => (
-            <option key={animal} value={animal}>
-              {animal}
-            </option>
-          ))}
-        </select>
-      </label>
-      <label>
-        Nome do animal:
-        <input type="text" name="name" required />
-      </label>
-      <button type="submit">Próximo</button>
-    </form>
+    <div className="min-h-screen flex items-center justify-center bg-background dark:bg-dark-background p-4">
+      <form onSubmit={handleSubmit} className="bg-white dark:bg-dark-secondary p-8 rounded-lg shadow-lg max-w-md w-full">
+        <h1 className="text-4xl font-kids text-primary dark:text-dark-primary mb-6 text-center">
+          Choose Your Character
+        </h1>
+        <div className="space-y-4">
+          <label className="block text-lg font-kids text-text dark:text-dark-text">
+            Escolha um animal:
+            <select
+              name="animal"
+              required
+              className="mt-1 block w-full p-2 border border-primary rounded-md bg-white dark:bg-dark-background dark:text-dark-text"
+            >
+              {animals.map((animal) => (
+                <option key={animal} value={animal} className="font-kids">
+                  {animal}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="block text-lg font-kids text-text dark:text-dark-text">
+            Nome do animal:
+            <input
+              type="text"
+              name="name"
+              required
+              className="mt-1 block w-full p-2 border border-primary rounded-md bg-white dark:bg-dark-background dark:text-dark-text"
+            />
+          </label>
+          <button
+            type="submit"
+            className="w-full bg-primary dark:bg-dark-primary text-white font-kids text-xl py-2 rounded-md hover:bg-secondary dark:hover:bg-dark-secondary transition-colors"
+          >
+            Próximo
+          </button>
+        </div>
+      </form>
+    </div>
   );
 };
 

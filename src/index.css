@@ -1,1 +1,53 @@
 @import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Cores para o light mode */
+    --color-primary: 255, 111, 97; /* #FF6F61 */
+    --color-secondary: 107, 91, 149; /* #6B5B95 */
+    --color-accent: 136, 176, 75; /* #88B04B */
+    --color-background: 247, 202, 201; /* #F7CAC9 */
+    --color-text: 46, 46, 46; /* #2E2E2E */
+  }
+
+  .dark {
+    /* Cores para o dark mode */
+    --color-primary: 255, 160, 122; /* #FFA07A */
+    --color-secondary: 138, 79, 125; /* #8A4F7D */
+    --color-background: 46, 46, 46; /* #2E2E2E */
+    --color-text: 255, 255, 255; /* #FFFFFF */
+  }
+}
+
+@layer components {
+  .font-kids {
+    font-family: 'Comic Sans MS', cursive;
+  }
+}
+
+@layer utilities {
+  .bg-background {
+    background-color: rgb(var(--color-background));
+  }
+  .bg-dark-background {
+    background-color: rgb(var(--color-background));
+  }
+  .text-text {
+    color: rgb(var(--color-text));
+  }
+  .text-dark-text {
+    color: rgb(var(--color-text));
+  }
+  .bg-primary {
+    background-color: rgb(var(--color-primary));
+  }
+  .bg-dark-primary {
+    background-color: rgb(var(--color-primary));
+  }
+  .bg-secondary {
+    background-color: rgb(var(--color-secondary));
+  }
+  .bg-dark-secondary {
+    background-color: rgb(var(--color-secondary));
+  }
+}
