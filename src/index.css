@@ -1,36 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Lato:wght@400;700&display=swap');
 @import "tailwindcss";
 
 @layer base {
   :root {
-    /* Cores para o Light Mode */
-    --color-primary: 0, 176, 255; /* Azul elétrico #00B0FF */
-    --color-secondary: 255, 45, 85; /* Rosa vibrante #FF2D55 */
-    --color-accent: 0, 230, 118; /* Verde neon #00E676 */
-    --color-background: 255, 243, 176; /* Amarelo suave #FFF3B0 */
-    --color-text: 33, 33, 33; /* Azul escuro #212121 */
+    /* 🎨 Cores vibrantes inspiradas em Atari antigo */
+    --color-primary: 0, 255, 255; /* Baby Blue neon */
+    --color-secondary: 255, 0, 144; /* Pink radioativo */
+    --color-accent: 255, 255, 0; /* Amarelo neon */
+    --color-background: 24, 24, 24; /* Preto azulado (Dark Mode Base) */
+    --color-text: 255, 255, 255; /* Branco puro */
   }
 
   .dark {
-    /* Cores para o Dark Mode */
-    --color-primary: 255, 159, 10; /* Laranja intenso #FF9F0A */
-    --color-secondary: 142, 68, 173; /* Roxo profundo #8E44AD */
-    --color-accent: 26, 188, 156; /* Turquesa #1ABC9C */
-    --color-background: 5, 15, 85; /* Azul escuro neon #050F55 */
-    --color-text: 255, 255, 255; /* Branco puro #FFFFFF */
+    /* 🎨 Dark Mode mais vibrante e autêntico */
+    --color-primary: 255, 94, 0; /* Laranja brilhante */
+    --color-secondary: 0, 255, 144; /* Verde néon */
+    --color-accent: 255, 216, 0; /* Amarelo ouro */
+    --color-background: 10, 10, 10; /* Preto absoluto */
+    --color-text: 255, 255, 255; /* Branco puro */
+  }
+}
+
+@layer base {
+  h1, h2, h3 {
+    font-family: 'Jersey 15', sans-serif;
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
   }
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(var(--color-background));
+  color: rgb(var(--color-text));
 }
 
+/* 🎮 Fontes para títulos e destaques */
 h1, h2, h3 {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Jersey 15', cursive;
+  letter-spacing: 1px;
 }
 
 @layer components {
   .font-kids {
-    font-family: 'Baloo 2', cursive; /* Melhor opção que Comic Sans */
+    font-family: 'Jersey 15', cursive; /* Para manter títulos consistentes */
   }
 }
 
@@ -52,11 +67,12 @@ h1, h2, h3 {
   }
 }
 
+/* ✨ Efeito Glow para deixar os botões chamativos */
 @layer utilities {
   .glow-effect {
     transition: box-shadow 0.3s ease-in-out;
   }
   .glow-effect:hover {
-    box-shadow: 0 0 12px rgba(var(--color-primary), 0.8);
+    box-shadow: 0 0 15px rgba(var(--color-primary), 0.9);
   }
 }

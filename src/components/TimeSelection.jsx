@@ -9,31 +9,34 @@ const TimeSelection = ({ onSelect }) => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background dark:bg-dark-background p-4">
-      <form onSubmit={handleSubmit} className="bg-white dark:bg-dark-secondary p-8 rounded-lg shadow-lg max-w-md w-full">
+    <div className="min-h-screen flex items-center justify-center bg-background p-4">
+      <form
+        onSubmit={handleSubmit}
+        className="bg-white dark:bg-dark-secondary p-8 rounded-lg shadow-lg max-w-md w-full"
+      >
         {/* TÍTULO */}
-        <h1 className="text-4xl font-kids text-primary dark:text-dark-primary mb-6 text-center">
+        <h1 className="text-4xl font-jersey text-primary text-slate-800 mb-6 text-center">
           Night or Day?
         </h1>
 
         <div className="space-y-4">
           {/* SELEÇÃO */}
-          <label className="block text-lg font-kids ">
+          <label className="block text-lg font-lato text-slate-800 dark:text-slate-200">
             Night or Day?:
             <select
               name="time"
               required
-              className="mt-1 block w-full p-2 border border-primary rounded-md bg-white dark:bg-dark-background dark:text-dark-text"
+              className="mt-1 block w-full p-2 border border-primary rounded-md bg-white dark:bg-dark-secondary text-slate-800 dark:text-slate-200"
             >
-              <option value="dia" className="font-kids">Day</option>
-              <option value="noite" className="font-kids">Night</option>
+              <option value="dia" className="font-lato">Day</option>
+              <option value="noite" className="font-lato">Night</option>
             </select>
           </label>
 
           {/* BOTÃO */}
           <button
             type="submit"
-            className="w-full bg-primary dark:bg-dark-primary text-white font-kids text-xl py-2 rounded-md hover:bg-secondary dark:hover:bg-dark-secondary transition-colors"
+            className="w-full bg-primary text-white font-lato text-xl py-2 rounded-md hover:bg-secondary dark:hover:bg-dark-secondary transition-colors"
           >
             Next
           </button>

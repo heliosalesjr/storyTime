@@ -8,22 +8,22 @@ const StoryDisplay = ({ story }) => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background dark:bg-dark-background p-4">
-      <div className="bg-white dark:bg-dark-secondary p-8 rounded-lg shadow-lg max-w-2xl w-full">
-        {/* TÍTULO */}
-        <h2 className="text-4xl font-pixel text-primary dark:text-dark-primary mb-6 text-center">
+    <div className="min-h-screen flex items-center justify-center bg-background p-4">
+      <div className="bg-white p-8 rounded-lg shadow-lg max-w-2xl w-full">
+        {/* TÍTULO - Agora com Jersey 15 */}
+        <h2 className="text-4xl font-jersey text-slate-800 mb-6 text-center">
           Your Story
         </h2>
 
         {/* HISTÓRIA */}
-        <p className="text-lg font-sans mb-6">
+        <p className="text-lg font-lato text-slate-800 mb-6">
           {story}
         </p>
 
         {/* BOTÃO */}
         <button
           onClick={handleSave}
-          className="w-full bg-primary dark:bg-dark-primary text-white font-sans text-xl py-2 rounded-md hover:bg-secondary dark:hover:bg-dark-secondary transition-colors"
+          className="w-full bg-primary text-white font-lato text-xl py-2 rounded-md hover:bg-secondary transition-colors"
         >
           Save Story
         </button>
