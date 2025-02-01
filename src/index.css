@@ -4,7 +4,7 @@
 @layer base {
   :root {
     /* 🎨 Cores vibrantes inspiradas em Atari antigo */
-    --color-primary: 0, 255, 255; /* Baby Blue neon */
+    --color-primary: 66, 135, 245; /* Baby Blue neon */
     --color-secondary: 255, 0, 144; /* Pink radioativo */
     --color-accent: 255, 255, 0; /* Amarelo neon */
     --color-background: 24, 24, 24; /* Preto azulado (Dark Mode Base) */

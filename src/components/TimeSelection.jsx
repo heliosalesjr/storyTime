@@ -21,12 +21,12 @@ const TimeSelection = ({ onSelect }) => {
 
         <div className="space-y-4">
           {/* SELEÇÃO */}
-          <label className="block text-lg font-lato text-slate-800 dark:text-slate-200">
+          <label className="block text-lg font-lato text-slate-800">
             Night or Day?:
             <select
               name="time"
               required
-              className="mt-1 block w-full p-2 border border-primary rounded-md bg-white dark:bg-dark-secondary text-slate-800 dark:text-slate-200"
+              className="mt-1 block w-full p-2 border border-primary rounded-md bg-white dark:bg-dark-secondary text-slate-800"
             >
               <option value="dia" className="font-lato">Day</option>
               <option value="noite" className="font-lato">Night</option>

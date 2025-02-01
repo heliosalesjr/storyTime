@@ -41,7 +41,7 @@ const ConflictSelection = ({ onSelect }) => {
           {/* BOTÃO */}
           <button
             type="submit"
-            className="w-full bg-primary text-white font-lato text-xl py-2 rounded-md hover:bg-secondary transition-colors"
+            className="w-full bg-secondary text-white font-lato text-xl py-2 rounded-md hover:bg-secondary transition-colors"
           >
             Keep telling the story
           </button>
