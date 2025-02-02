@@ -25,7 +25,7 @@ const CharacterSelection = ({ onSelect }) => {
         <div className="space-y-4">
           {/* SELEÇÃO DE ANIMAL */}
           <label className="block text-lg font-lato">
-            Escolha um animal:
+            Pick an animal:
             <select
               name="animal"
               required
@@ -41,7 +41,7 @@ const CharacterSelection = ({ onSelect }) => {
 
           {/* NOME DO ANIMAL */}
           <label className="block text-lg font-lato">
-            Nome do animal:
+            Give it a name!
             <input
               type="text"
               name="name"
