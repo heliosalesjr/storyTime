@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const ConflictSelection = ({ onSelect }) => {
-  const conflicts = ['fenômeno natural', 'outro animal', 'acidente'];
+  const conflicts = ['natural phenomenon', 'a different animal shows up', 'something gets lost', 'a new friend', 'a problem to solve'];
 
   const handleSubmit = (e) => {
     e.preventDefault();

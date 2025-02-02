@@ -28,8 +28,8 @@ const TimeSelection = ({ onSelect }) => {
               required
               className="mt-1 block w-full p-2 border border-primary rounded-md bg-white dark:bg-dark-secondary text-slate-800"
             >
-              <option value="dia" className="font-lato">Day</option>
-              <option value="noite" className="font-lato">Night</option>
+              <option value="day" className="font-lato">Day</option>
+              <option value="night" className="font-lato">Night</option>
             </select>
           </label>
 

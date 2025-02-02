@@ -29,7 +29,7 @@ const App = () => {
   };
 
   const handleConflictSelect = async (data) => {
-    const prompt = `Crie uma história para crianças onde o personagem é um ${character.animal} chamado ${character.name}. A história acontece durante a ${time}. O problema é ${data.conflict}. A história deve ser criativa e otimista.`;
+    const prompt = `Generate a short story for children where the character is a ${character.animal} and its name is ${character.name}. The story takes place during the ${time}. The conflict of the story is ${data.conflict}. break the story into 4 main sentences that shouldn't be longer than 200 characters each. The 1st sentence introduces the animal and its name, the secondo should evolve into its envionment, the third should introduce the conflict, and the fourth should resolve the conflict, leaving a message for the children.`;
     const generatedStory = await generateStory(prompt);
     setStory(generatedStory);
     setStep(4);

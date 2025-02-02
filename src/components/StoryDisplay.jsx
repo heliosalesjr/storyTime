@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const StoryDisplay = ({ story }) => {
   const handleSave = () => {
     const blob = new Blob([story], { type: 'text/plain;charset=utf-8' });
-    saveAs(blob, 'historia.txt');
+    saveAs(blob, 'story.txt');
   };
 
   return (
