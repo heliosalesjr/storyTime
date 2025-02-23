@@ -6,6 +6,7 @@ import StoryDisplay from "./components/StoryDisplay";
 import Navbar from "./components/Navbar"; // Importando o Navbar
 import { generateStory } from "./services/api";
 import "./index.css";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [step, setStep] = useState(1);
@@ -45,6 +46,8 @@ const App = () => {
       {step === 2 && <TimeSelection onSelect={handleTimeSelect} />}
       {step === 3 && <ConflictSelection onSelect={handleConflictSelect} />}
       {step === 4 && <StoryDisplay story={story} />}
+
+      <Footer />
     </div>
   );
 };
