@@ -39,7 +39,7 @@ const App = () => {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      {/* Passando darkMode e toggleDarkMode para a Navbar */}
+      
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       
       {step === 1 && <CharacterSelection onSelect={handleCharacterSelect} />}
