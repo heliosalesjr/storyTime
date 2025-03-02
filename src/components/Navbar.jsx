@@ -7,7 +7,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         <div className="text-2xl font-bold">StoryTime</div>
         <div className="flex space-x-6 items-center">
           <a href="/about" className="hover:text-gray-300">About</a>
-          <a href="https://github.com/seu-repositorio" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
             GitHub
           </a>
           <button
